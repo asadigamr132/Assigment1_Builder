@@ -32,23 +32,8 @@ its representation.
 
 @ Builder Pattern Structure
 
-MealPlanBuilder
-       |
-       | implements
-       |
-       +-----------------------------+
-       |                             |
-MuscleGainMealPlanBuilder   WeightLossMealPlanBuilder
-       |                             |
-       +-------------+---------------+
-                     |
-                 MealPlan
-                     ^
-                     |
-              MealPlanDirector
-                     ^
-                     |
-                    Main
+<img width="487" height="431" alt="image" src="https://github.com/user-attachments/assets/05c6563b-af01-4e34-b6ad-74aafa285e31" />
+
 Features
 
 Fluent API and method chaining.
