@@ -15,5 +15,6 @@ public class Main {
 
         System.out.println(muscleGainPlan);
         System.out.println(weightLossPlan);
+        System.out.println(muscleGainPlan.getDailyProtein());
     }
 }

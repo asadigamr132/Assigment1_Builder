@@ -20,6 +20,25 @@ public class MealPlan {
         this.dailyProtein = dailyProtein;
         this.mealsPerDay = mealsPerDay;
     }
+    public String getName() {
+        return name;
+    }
+
+    public String getGoal() {
+        return goal;
+    }
+
+    public int getDailyCalories() {
+        return dailyCalories;
+    }
+
+    public int getDailyProtein() {
+        return dailyProtein;
+    }
+
+    public int getMealsPerDay() {
+        return mealsPerDay;
+    }
     @Override
     public String toString() {
         return "MealPlan{" +
