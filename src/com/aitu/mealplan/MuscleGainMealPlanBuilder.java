@@ -3,6 +3,7 @@ package com.aitu.mealplan;
 public class MuscleGainMealPlanBuilder
         implements MealPlanBuilder {
     private String name;
+    private String goal;
     private int dailyCalories;
     private int dailyProtein;
     private int mealsPerDay;
@@ -10,6 +11,11 @@ public class MuscleGainMealPlanBuilder
     @Override
     public MealPlanBuilder setName(String name) {
         this.name = name;
+        return this;
+    }
+    @Override
+    public MealPlanBuilder setGoal(String goal) {
+        this.goal = goal;
         return this;
     }
 
@@ -58,6 +64,7 @@ public class MuscleGainMealPlanBuilder
 
         return new MealPlan(
                 name,
+                goal,
                 dailyCalories,
                 dailyProtein,
                 mealsPerDay

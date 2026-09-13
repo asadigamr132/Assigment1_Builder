@@ -3,6 +3,8 @@ package com.aitu.mealplan;
 public interface MealPlanBuilder {
     MealPlanBuilder setName(String name);
 
+    MealPlanBuilder setGoal(String goal);
+
     MealPlanBuilder setDailyCalories(int calories);
 
     MealPlanBuilder setDailyProtein(int protein);
