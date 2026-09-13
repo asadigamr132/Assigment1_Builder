@@ -34,6 +34,29 @@ public class WeightLossMealPlanBuilder
 
     @Override
     public MealPlan build() {
+
+        if (name == null || name.isBlank()) {
+            throw new IllegalArgumentException("Name cannot be empty");
+        }
+
+        if (dailyCalories <= 0) {
+            throw new IllegalArgumentException(
+                    "Daily calories must be greater than 0"
+            );
+        }
+
+        if (dailyProtein <= 0) {
+            throw new IllegalArgumentException(
+                    "Daily protein must be greater than 0"
+            );
+        }
+
+        if (mealsPerDay <= 0) {
+            throw new IllegalArgumentException(
+                    "Meals per day must be greater than 0"
+            );
+        }
+
         return new MealPlan(
                 name,
                 dailyCalories,
@@ -41,4 +64,5 @@ public class WeightLossMealPlanBuilder
                 mealsPerDay
         );
     }
+
 }

@@ -12,6 +12,7 @@ public class Main {
                 new WeightLossMealPlanBuilder()
         );
 
+
         System.out.println(muscleGainPlan);
         System.out.println(weightLossPlan);
     }
